@@ -10,610 +10,163 @@
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/alerts/readme_alerts/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/alerts/readme_alerts-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/alerts/readme_alerts-geomet/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/citypage-weather/readme_citypageweather/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/citypage-weather/readme_citypageweather-datamart/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/marine-weather/readme_marine-weather/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/marine-weather/readme_marine-weather-datamart/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aqhi/readme_aqhi/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aqhi/readme_aqhi-datamartcsv/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aqhi/readme_aqhi-datamartjson/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aqhi/readme_aqhi-datamartxml/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aqhi/readme_aqhi-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aqhi/changelog_aqhi/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/thunderstorm-outlooks/readme_thunderstorm-outlooks/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/thunderstorm-outlooks/readme_thunderstorm-outlooks-datamart/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/coastal-flooding/readme_coastal-flooding/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/coastal-flooding/readme_coastal-flooding-risk-index-datamart/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/hurricanes/readme_hurricanes/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/hurricanes/readme_hurricanes-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/hurricanes/readme_hurricanes_geomet/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-composite-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-composite-extrapolation-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-couverture-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-dpqpe-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-mesh-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-odimh5-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-sptp-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar-visibility-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radar_geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_radar/readme_radarimage-datamart/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/lightning/readme_lightning/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/lightning/readme_lightning-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/lightning/readme_lightning-geomet/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_satellite/readme_satellite/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_satellite/readme_satellite-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_satellite/readme_satellite_geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_satellite/changelog_satellite/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_station/readme_obs_insitu/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_station/readme_obs_insitu_swobdatamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_station/readme_obs_insitu_xmldatamart/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_hydrometric/readme_hydrometric/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/obs_hydrometric/readme_hydrometric-datamart/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/vertical-profiles/readme_vertical-profiles-obs/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/vertical-profiles/readme_vertical-profiles-obs-datamart/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/readme_gdps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/readme_gdps-datamart-alpha/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/readme_gdps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/readme_gdps-geml-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/readme_gdps-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/readme_gdps-ice-anal-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/readme_gdps-statpostproc-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/changelog_gdps-geml/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdps/changelog_gdps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/readme_rdps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/aviation-package/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/ceiling/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/readme_astro-rdps-datamart-alpha/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/readme_rdps-datamart-alpha/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/readme_rdps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/readme_rdps-statpostproc-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps/changelog_rdps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/vertical-profiles/readme_vertical-profiles-nwp/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/vertical-profiles/readme_vertical-profiles-nwp-datamart/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps/readme_hrdps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps/readme_hrdps-datamart-alpha/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps/readme_hrdps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps/readme_hrdps-statpostproc-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps/changelog_hrdps-west/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps/changelog_hrdps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caps/readme_caps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caps/readme_caps-datamart-alpha/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caps/readme_caps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caps/readme_caps-weong-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caps/changelog_caps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_nowcasting/readme_nowcasting/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_nowcasting/readme_nowcasting-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_nowcasting/changelog_nowcasting/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_geps/readme_geps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_geps/readme_geps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_geps/readme_geps-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_geps/changelog_geps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_naefs/readme_naefs/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_naefs/readme_naefs-datamartxml/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_reps/readme_reps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_reps/readme_reps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_reps/changelog_reps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_cansips/readme_cansips/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_cansips/readme_cansips-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_cansips/readme_cansips-datamartcsv/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_cansips/readme_cansips-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_cansips/changelog_cansips/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdpa/readme_rdpa/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdpa/readme_rdpa-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdpa/readme_rdpa-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdpa/changelog_rdpa/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdpa/readme_hrdpa/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdpa/readme_hrdpa-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdpa/changelog_hrdpa/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrepa/readme_hrepa/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrepa/readme_hrepa-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrepa/readme_hrepa-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrepa/changelog_hrepa/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdpa-watershed/readme_hrdpa-watershed/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdpa-watershed/readme_hrdpa-watershed-datamart/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps/readme_raqdps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps/readme_raqdps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps/readme_raqdps-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps/changelog_raqdps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdaqa/readme_rdaqa/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdaqa/readme_rdaqa-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdaqa/changelog_rdaqa/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caldas-nsrps/readme_caldas-nsrps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caldas-nsrps/readme_caldas-nsrps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caldas-nsrps/changelog_caldas-nsrps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdlps/readme_hrdlps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdlps/readme_hrdlps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdlps/changelog_hrdlps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caldas-gdps/changelog_caldas-gdps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caldas-hrdps/changelog_caldas-hrdps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_caldas-sat/changelog_caldas-sat/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrelps/changelog_hrelps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_giops/readme_giops/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_giops/readme_giops-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_giops/changelog_giops/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_riops/readme_riops/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_riops/readme_riops-datamart-alpha/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_riops/readme_riops-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_riops/changelog_riops/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ciops/readme_ciops/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ciops/readme_ciops-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ciops/readme_ciops-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ciops/changelog_ciops/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rips/changelog_rips/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdwps/readme_gdwps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdwps/readme_gdwps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdwps/changelog_gdwps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gewps/readme_gewps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gewps/readme_gewps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gewps/readme_gewps-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gewps/changelog_gewps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdwps/readme_rdwps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdwps/readme_rdwps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdwps/changelog_rdwps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rewps/readme_rewps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rewps/readme_rewps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rewps/readme_rewps-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rewps/changelog_rewps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_wam-global/changelog_wam-global/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdsps/readme_gdsps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdsps/readme_gdsps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdsps/readme_gdsps-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_gdsps/changelog_gdsps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_resps/readme_resps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_resps/readme_resps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_resps/readme_resps-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_resps/changelog_resps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_wcps/readme_wcps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_wcps/readme_wcps-atm-ocean-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_wcps/readme_wcps_nemo-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_wcps/changelog_wcps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ohps/readme_ohps/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ohps/readme_ohps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ohps/changelog_ohps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_dhps/changelog_dhps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_ehps/changelog_ehps/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_ahccd/readme_ahccd/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_ahccd/readme_ahccd-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_ahccd/readme_ahccd-geomet/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cangrd/readme_cangrd/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cangrd/readme_cangrd-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cangrd/readme_cangrd-geomet/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cmip5/readme_cmip5/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cmip5/readme_cmip5-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cmip5/readme_cmip5-geomet/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cmip6/readme_cmip6/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cmip6/readme_cmip6-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_cmip6/readme_cmip6-geomet/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_dcs/readme_dcs/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_dcs/readme_dcs-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_dcs/readme_dcs-geomet/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_candcs-u6/readme_candcs-u6/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_candcs-u6/readme_candcs-u6-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_candcs-u6/readme_candcs-u6-geomet/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_spei/readme_spei/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_spei/readme_spei-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_spei/readme_spei-geomet/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_indices/readme_climateindices/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_indices/readme_climateindices-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_indices/readme_climateindices-geomet/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_obs/readme_climateobs/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_obs/readme_climateobs-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_obs/readme_climateobs-geomet/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_ltce/readme_climateltce/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/climate_ltce/readme_climateltce-datamart/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/bulletins/readme_bulletins/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/bulletins/readme_bulletins-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/bulletins/readme_bulletinsbufr-datamart/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/meteocode/readme_meteocode/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/meteocode/readme_meteocode-datamartcsv/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/meteocode/readme_meteocode-datamartxml/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/metnotes/readme_metnotes/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/metnotes/readme_metnotes-datamart/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/forecast-regions/readme_forecast-regions/</loc>
@@ -622,61 +175,16 @@
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aviation/iwxxm/readme_aviation-iwxxm/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/aviation/iwxxm/readme_aviation-iwxxm-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_atags/changelog_atags/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdsps/readme_rdsps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdsps/readme_rdsps-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdsps/changelog_rdsps/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps-cgsl/readme_rdps-cgsl/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps-cgsl/readme_rdps-cgsl-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_rdps-cgsl/changelog_rdps-cgsl/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps-fw/readme_raqdps-fw/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps-fw/readme_raqdps-fw-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps-fw/readme_raqdps-fw-geomet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_raqdps-fw/changelog_raqdps-fw/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps-north/readme_hrdps-north/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps-north/readme_hrdps-north-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/nwp_hrdps-north/changelog_hrdps-north/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/changelog_nwp/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/changelog_multisystems/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/changelog_pre2011/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/readme_grib/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data-themes/</loc>
@@ -707,6 +215,9 @@
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data-themes/wildfires/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/en/access/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/msc-geomet/</loc>
@@ -742,46 +253,13 @@
         <loc>https://dukestep.github.io/zensical-public-doc/en/wmo-wis2/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/licence/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage-policy/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/usage/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorials/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorial_OAFeat_Power-BI/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorial_OAFeat_QGIS/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorial_OAFeat_R-Excel/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorial_WMS_QGIS/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorial_gdal/tutorial_gdal/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorial_raw-data_QGIS/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/tutorial_web-maps/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/use-case_arthur/use-case_arthur/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/use-case_oafeat/use-case_oafeat-interactive/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/usage/use-case_oafeat/use-case_oafeat-script/</loc>
+        <loc>https://dukestep.github.io/zensical-public-doc/en/msc-data/readme_grib/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/en/faq/</loc>
@@ -790,9 +268,9 @@
         <loc>https://dukestep.github.io/zensical-public-doc/en/contact/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/events/2019-07_hackathon-METEOHACK/</loc>
+        <loc>https://dukestep.github.io/zensical-public-doc/en/licence/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/en/events/2019-07_open-data-forum/</loc>
+        <loc>https://dukestep.github.io/zensical-public-doc/en/usage-policy/</loc>
       </url>
 </urlset>
