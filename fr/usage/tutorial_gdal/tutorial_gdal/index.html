@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.55">
     
     
       
@@ -4936,7 +4936,7 @@
 <p>Nous allons utiliser une commande <code>curl</code> pour enregistrer le résultat de la requête <abbr title="Web Coverage Service (service de couverture web)">WCS</abbr> sur le disque, le fichier sera nommé <code>CMC_glb_TMP.tif</code>. Le résultat est un fichier GeoTIFF, montrant la température (°C) d'un sous-ensemble du Système Global de Prévision Déterministe (<abbr title="Système global de prévision déterministe">SGPD</abbr>) du <abbr title="Service météorologique du Canada">SMC</abbr>.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>%%bash
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>curl<span class="w"> </span><span class="s2">&quot;https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>CMC_glb_TMP.tif<span class="w"> </span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>curl<span class="w"> </span><span class="s2">"https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff"</span><span class="w"> </span>&gt;<span class="w"> </span>CMC_glb_TMP.tif<span class="w"> </span>
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>                                 Dload  Upload   Total   Spent    Left  Speed
@@ -4959,20 +4959,20 @@
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Files: CMC_glb_TMP.tif
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Size is 146, 75
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Coordinate System is:
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>GEOGCRS[&quot;WGS 84&quot;,
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    DATUM[&quot;World Geodetic System 1984&quot;,
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        ELLIPSOID[&quot;WGS 84&quot;,6378137,298.257223563,
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>            LENGTHUNIT[&quot;metre&quot;,1]]],
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    PRIMEM[&quot;Greenwich&quot;,0,
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>        ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>GEOGCRS["WGS 84",
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    DATUM["World Geodetic System 1984",
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        ELLIPSOID["WGS 84",6378137,298.257223563,
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>            LENGTHUNIT["metre",1]]],
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    PRIMEM["Greenwich",0,
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>        ANGLEUNIT["degree",0.0174532925199433]],
 </span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    CS[ellipsoidal,2],
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>        AXIS[&quot;geodetic latitude (Lat)&quot;,north,
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>        AXIS["geodetic latitude (Lat)",north,
 </span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>            ORDER[1],
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>            ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>        AXIS[&quot;geodetic longitude (Lon)&quot;,east,
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>            ANGLEUNIT["degree",0.0174532925199433]],
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>        AXIS["geodetic longitude (Lon)",east,
 </span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>            ORDER[2],
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>            ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    ID[&quot;EPSG&quot;,4326]]
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>            ANGLEUNIT["degree",0.0174532925199433]],
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    ID["EPSG",4326]]
 </span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>Data axis to CRS axis mapping: 2,1
 </span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>Origin = (-119.999862068965513,66.000000000000000)
 </span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>Pixel Size = (0.239724137931034,-0.240000000000000)
@@ -4984,11 +4984,11 @@
 </span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>Image Structure Metadata:
 </span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>  INTERLEAVE=BAND
 </span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>Corner Coordinates:
-</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>Upper Left  (-119.9998621,  66.0000000) (119d59&#39;59.50&quot;W, 66d 0&#39; 0.00&quot;N)
-</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>Lower Left  (-119.9998621,  48.0000000) (119d59&#39;59.50&quot;W, 48d 0&#39; 0.00&quot;N)
-</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>Upper Right ( -85.0001379,  66.0000000) ( 85d 0&#39; 0.50&quot;W, 66d 0&#39; 0.00&quot;N)
-</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>Lower Right ( -85.0001379,  48.0000000) ( 85d 0&#39; 0.50&quot;W, 48d 0&#39; 0.00&quot;N)
-</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>Center      (-102.5000000,  57.0000000) (102d30&#39; 0.00&quot;W, 57d 0&#39; 0.00&quot;N)
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>Upper Left  (-119.9998621,  66.0000000) (119d59'59.50"W, 66d 0' 0.00"N)
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>Lower Left  (-119.9998621,  48.0000000) (119d59'59.50"W, 48d 0' 0.00"N)
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>Upper Right ( -85.0001379,  66.0000000) ( 85d 0' 0.50"W, 66d 0' 0.00"N)
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>Lower Right ( -85.0001379,  48.0000000) ( 85d 0' 0.50"W, 48d 0' 0.00"N)
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>Center      (-102.5000000,  57.0000000) (102d30' 0.00"W, 57d 0' 0.00"N)
 </span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>Band 1 Block=146x14 Type=Float32, ColorInterp=Gray
 </span></code></pre></div>
 <p>Il est aussi possible d'utiliser <code>gdalinfo</code> pour obtenir quelques statistiques de base sur le fichier matriciel, comme la valeur minimale et maximale en ajoutant l'option <code>-mm</code>. Notez que les valeurs résultantes sont en °C.</p>
@@ -5004,7 +5004,7 @@
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>gdalinfo<span class="w"> </span>-proj4<span class="w"> </span>CMC_glb_TMP.tif<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>PROJ.4<span class="w"> </span>-A<span class="w"> </span><span class="m">1</span>
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>PROJ.4 string is:
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>&#39;+proj=longlat +datum=WGS84 +no_defs&#39;
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>'+proj=longlat +datum=WGS84 +no_defs'
 </span></code></pre></div>
 <h2 id="reprojeter-un-fichier-raster">Reprojeter un fichier raster<a class="headerlink" href="#reprojeter-un-fichier-raster" title="Permanent link">&para;</a></h2>
 <p>En utilisant la commande <code>gdalwarp</code>, nous pouvons reprojeter un fichier matriciel. En utilisant les données de GeoMet du <abbr title="Service météorologique du Canada">SMC</abbr> et du Datamart du <abbr title="Service météorologique du Canada">SMC</abbr>, vous devez seulement fournir une définition de projection de sortie correspondant à un code EPSG, ou vous pouvez utiliser une chaîne de caractères proj4.</p>
@@ -5019,21 +5019,21 @@
 <p>Ensuite, nous pouvons utiliser <code>gdalinfo</code> pour regarder les coordonnées et la chaîne de caractères proj4 pour s'assurer que la projection de <code>CMC_glb_TMP_epsg3857.tif</code> est réellement différente du fichier original.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>%%bash
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>gdalinfo<span class="w"> </span>-proj4<span class="w"> </span>epsg3857.tif<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;(PROJ.4|Corner Coordinates:)&#39;</span><span class="w"> </span>-A<span class="w"> </span><span class="m">5</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>gdalinfo<span class="w"> </span>-proj4<span class="w"> </span>epsg3857.tif<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">'(PROJ.4|Corner Coordinates:)'</span><span class="w"> </span>-A<span class="w"> </span><span class="m">5</span>
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>PROJ.4 string is:
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>&#39;+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs&#39;
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>'+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs'
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Origin = (-20037500.189506221562624,17439592.350557137280703)
 </span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Pixel Size = (19796.259162699658191,-19796.259162699658191)
 </span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>Metadata:
 </span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>  AREA_OR_POINT=Area
 </span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>--
 </span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>Corner Coordinates:
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>Upper Left  (-20037500.190,17439592.351) (179d59&#39;59.74&quot;W, 82d34&#39; 7.50&quot;N)
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>Lower Left  (-20037500.190,-17441416.294) (179d59&#39;59.74&quot;W, 82d34&#39;15.13&quot;S)
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>Upper Right (20030128.356,17439592.351) (179d56&#39; 1.34&quot;E, 82d34&#39; 7.50&quot;N)
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>Lower Right (20030128.356,-17441416.294) (179d56&#39; 1.34&quot;E, 82d34&#39;15.13&quot;S)
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>Center      (   -3685.917,    -911.972) (  0d 1&#39;59.20&quot;W,  0d 0&#39;29.49&quot;S)
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>Upper Left  (-20037500.190,17439592.351) (179d59'59.74"W, 82d34' 7.50"N)
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>Lower Left  (-20037500.190,-17441416.294) (179d59'59.74"W, 82d34'15.13"S)
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>Upper Right (20030128.356,17439592.351) (179d56' 1.34"E, 82d34' 7.50"N)
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>Lower Right (20030128.356,-17441416.294) (179d56' 1.34"E, 82d34'15.13"S)
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>Center      (   -3685.917,    -911.972) (  0d 1'59.20"W,  0d 0'29.49"S)
 </span></code></pre></div>
 <h2 id="convertir-un-fichier-geotiff-au-format-de-fichier-netcdf">Convertir un fichier GeoTIFF au format de fichier NetCDF<a class="headerlink" href="#convertir-un-fichier-geotiff-au-format-de-fichier-netcdf" title="Permanent link">&para;</a></h2>
 <p>En utilisant la commande <code>gdal_translate</code>, nous pouvons convertir un fichier matriciel de n'importe quel format supporté (<code>gdalinfo --formats</code>) en un autre format de fichier matriciel</p>
@@ -5054,20 +5054,20 @@
 </span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>Files: CMC_glb_TMP.nc
 </span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>Size is 146, 75
 </span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>Coordinate System is:
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>GEOGCRS[&quot;WGS 84&quot;,
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    DATUM[&quot;World Geodetic System 1984&quot;,
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>        ELLIPSOID[&quot;WGS 84&quot;,6378137,298.257223563,
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>            LENGTHUNIT[&quot;metre&quot;,1]]],
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    PRIMEM[&quot;Greenwich&quot;,0,
-</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>        ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>GEOGCRS["WGS 84",
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    DATUM["World Geodetic System 1984",
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>        ELLIPSOID["WGS 84",6378137,298.257223563,
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>            LENGTHUNIT["metre",1]]],
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    PRIMEM["Greenwich",0,
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>        ANGLEUNIT["degree",0.0174532925199433]],
 </span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>    CS[ellipsoidal,2],
-</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>        AXIS[&quot;geodetic latitude (Lat)&quot;,north,
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>        AXIS["geodetic latitude (Lat)",north,
 </span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>            ORDER[1],
-</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>            ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
-</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>        AXIS[&quot;geodetic longitude (Lon)&quot;,east,
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>            ANGLEUNIT["degree",0.0174532925199433]],
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>        AXIS["geodetic longitude (Lon)",east,
 </span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>            ORDER[2],
-</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>            ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
-</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>    ID[&quot;EPSG&quot;,4326]]
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>            ANGLEUNIT["degree",0.0174532925199433]],
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>    ID["EPSG",4326]]
 </span><span id="__span-17-19"><a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>Data axis to CRS axis mapping: 2,1
 </span><span id="__span-17-20"><a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>Origin = (-119.999862068965513,66.000000000000000)
 </span><span id="__span-17-21"><a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a>Pixel Size = (0.239724137931034,-0.240000000000000)
@@ -5081,7 +5081,7 @@
 </span><span id="__span-17-29"><a id="__codelineno-17-29" name="__codelineno-17-29" href="#__codelineno-17-29"></a>  crs#longitude_of_prime_meridian=0
 </span><span id="__span-17-30"><a id="__codelineno-17-30" name="__codelineno-17-30" href="#__codelineno-17-30"></a>  crs#long_name=CRS definition
 </span><span id="__span-17-31"><a id="__codelineno-17-31" name="__codelineno-17-31" href="#__codelineno-17-31"></a>  crs#semi_major_axis=6378137
-</span><span id="__span-17-32"><a id="__codelineno-17-32" name="__codelineno-17-32" href="#__codelineno-17-32"></a>  crs#spatial_ref=GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AXIS[&quot;Latitude&quot;,NORTH],AXIS[&quot;Longitude&quot;,EAST],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]
+</span><span id="__span-17-32"><a id="__codelineno-17-32" name="__codelineno-17-32" href="#__codelineno-17-32"></a>  crs#spatial_ref=GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]
 </span><span id="__span-17-33"><a id="__codelineno-17-33" name="__codelineno-17-33" href="#__codelineno-17-33"></a>  lat#long_name=latitude
 </span><span id="__span-17-34"><a id="__codelineno-17-34" name="__codelineno-17-34" href="#__codelineno-17-34"></a>  lat#standard_name=latitude
 </span><span id="__span-17-35"><a id="__codelineno-17-35" name="__codelineno-17-35" href="#__codelineno-17-35"></a>  lat#units=degrees_north
@@ -5096,11 +5096,11 @@
 </span><span id="__span-17-44"><a id="__codelineno-17-44" name="__codelineno-17-44" href="#__codelineno-17-44"></a>  NC_GLOBAL#GDAL_TIFFTAG_YRESOLUTION=72
 </span><span id="__span-17-45"><a id="__codelineno-17-45" name="__codelineno-17-45" href="#__codelineno-17-45"></a>  NC_GLOBAL#history=Tue Jul 21 18:51:21 2020: GDAL CreateCopy( CMC_glb_TMP.nc, ... )
 </span><span id="__span-17-46"><a id="__codelineno-17-46" name="__codelineno-17-46" href="#__codelineno-17-46"></a>Corner Coordinates:
-</span><span id="__span-17-47"><a id="__codelineno-17-47" name="__codelineno-17-47" href="#__codelineno-17-47"></a>Upper Left  (-119.9998621,  66.0000000) (119d59&#39;59.50&quot;W, 66d 0&#39; 0.00&quot;N)
-</span><span id="__span-17-48"><a id="__codelineno-17-48" name="__codelineno-17-48" href="#__codelineno-17-48"></a>Lower Left  (-119.9998621,  48.0000000) (119d59&#39;59.50&quot;W, 48d 0&#39; 0.00&quot;N)
-</span><span id="__span-17-49"><a id="__codelineno-17-49" name="__codelineno-17-49" href="#__codelineno-17-49"></a>Upper Right ( -85.0001379,  66.0000000) ( 85d 0&#39; 0.50&quot;W, 66d 0&#39; 0.00&quot;N)
-</span><span id="__span-17-50"><a id="__codelineno-17-50" name="__codelineno-17-50" href="#__codelineno-17-50"></a>Lower Right ( -85.0001379,  48.0000000) ( 85d 0&#39; 0.50&quot;W, 48d 0&#39; 0.00&quot;N)
-</span><span id="__span-17-51"><a id="__codelineno-17-51" name="__codelineno-17-51" href="#__codelineno-17-51"></a>Center      (-102.5000000,  57.0000000) (102d30&#39; 0.00&quot;W, 57d 0&#39; 0.00&quot;N)
+</span><span id="__span-17-47"><a id="__codelineno-17-47" name="__codelineno-17-47" href="#__codelineno-17-47"></a>Upper Left  (-119.9998621,  66.0000000) (119d59'59.50"W, 66d 0' 0.00"N)
+</span><span id="__span-17-48"><a id="__codelineno-17-48" name="__codelineno-17-48" href="#__codelineno-17-48"></a>Lower Left  (-119.9998621,  48.0000000) (119d59'59.50"W, 48d 0' 0.00"N)
+</span><span id="__span-17-49"><a id="__codelineno-17-49" name="__codelineno-17-49" href="#__codelineno-17-49"></a>Upper Right ( -85.0001379,  66.0000000) ( 85d 0' 0.50"W, 66d 0' 0.00"N)
+</span><span id="__span-17-50"><a id="__codelineno-17-50" name="__codelineno-17-50" href="#__codelineno-17-50"></a>Lower Right ( -85.0001379,  48.0000000) ( 85d 0' 0.50"W, 48d 0' 0.00"N)
+</span><span id="__span-17-51"><a id="__codelineno-17-51" name="__codelineno-17-51" href="#__codelineno-17-51"></a>Center      (-102.5000000,  57.0000000) (102d30' 0.00"W, 57d 0' 0.00"N)
 </span><span id="__span-17-52"><a id="__codelineno-17-52" name="__codelineno-17-52" href="#__codelineno-17-52"></a>Band 1 Block=146x1 Type=Float32, ColorInterp=Undefined
 </span><span id="__span-17-53"><a id="__codelineno-17-53" name="__codelineno-17-53" href="#__codelineno-17-53"></a>  NoData Value=9.96920996838686905e+36
 </span><span id="__span-17-54"><a id="__codelineno-17-54" name="__codelineno-17-54" href="#__codelineno-17-54"></a>  Metadata:

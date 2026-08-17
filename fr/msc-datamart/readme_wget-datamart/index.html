@@ -29,7 +29,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.55">
     
     
       
@@ -4983,7 +4983,7 @@
 <h2 id="pour-aller-chercher-un-fichier-particulier-de-la-base-de-donnees-00z-du-sgpd-systeme-global-de-prevision-deterministe"><strong>Pour aller chercher un fichier particulier</strong>  de la base de données 00Z du <abbr title="Système global de prévision déterministe">SGPD</abbr> (Système global de prévision déterministe)<a class="headerlink" href="#pour-aller-chercher-un-fichier-particulier-de-la-base-de-donnees-00z-du-sgpd-systeme-global-de-prevision-deterministe" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code>wget https://dd.meteo.gc.ca/model_gem_global/25km/grib2/lat_lon/00/HHH/nom_de_fichier
 
-wget -nd -r -l1 -A &#39;*HGT_ISBY*aaaammjjhh_P036.grib2&#39; https://dd.meteo.gc.ca/model_gem_global/25km/grib2/lat_lon/00/036/
+wget -nd -r -l1 -A '*HGT_ISBY*aaaammjjhh_P036.grib2' https://dd.meteo.gc.ca/model_gem_global/25km/grib2/lat_lon/00/036/
 </code></pre></div>
 <p>Commentaires :</p>
 <ul>
@@ -5005,7 +5005,7 @@ wget -nd -r -l1 -A &#39;*HGT_ISBY*aaaammjjhh_P036.grib2&#39; https://dd.meteo.gc
 </li>
 </ul>
 <h2 id="pour-aller-chercher-les-previsions-de-temperature-du-srpd-systeme-regional-de-prevision-deterministe-a-00h-pour-la-passe-00z-a-2m-et-a-tous-les-niveaux-de-pression">Pour aller chercher les prévisions de température du <abbr title="Système régional de prévision déterministe">SRPD</abbr> (Système régional de prévision déterministe) à 00h pour la passe 00Z, à 2m et à tous les niveaux de pression :<a class="headerlink" href="#pour-aller-chercher-les-previsions-de-temperature-du-srpd-systeme-regional-de-prevision-deterministe-a-00h-pour-la-passe-00z-a-2m-et-a-tous-les-niveaux-de-pression" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget -nd -r -l1 -A &#39;*TMP_TGL*aaaammjjhh_P000.grib2,*TMP_ISBL*aaaammjjhh_P000.grib2&#39; -R &#39;*ISBL_[12]00*&#39; https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/00/000/
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget -nd -r -l1 -A '*TMP_TGL*aaaammjjhh_P000.grib2,*TMP_ISBL*aaaammjjhh_P000.grib2' -R '*ISBL_[12]00*' https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/00/000/
 </span></code></pre></div>
 <p>Commentaires :</p>
 <ul>
