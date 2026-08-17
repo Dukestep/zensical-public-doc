@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.55">
     
     
       
@@ -4892,25 +4892,25 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">scales</span><span class="p">)</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nf">options</span><span class="p">(</span><span class="n">scipen</span><span class="o">=</span><span class="m">999</span><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">aqhi_obs_realtime</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?sortby=observation_datetime&amp;limit=100&amp;location_name_fr=Ottawa&amp;f=csv&quot;</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">format_str</span><span class="o">=</span><span class="s">&quot;%Y-%m-%dT%H:%M:%OSZ&quot;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">obs_datetime</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.POSIXct</span><span class="p">(</span><span class="n">aqhi_obs_realtime</span><span class="o">$</span><span class="n">observation_datetime</span><span class="p">,</span><span class="w"> </span><span class="n">tz</span><span class="o">=</span><span class="s">&quot;GMT&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">format</span><span class="o">=</span><span class="n">format_str</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">aqhi_obs_realtime</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read.csv</span><span class="p">(</span><span class="s">"https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?sortby=observation_datetime&amp;limit=100&amp;location_name_fr=Ottawa&amp;f=csv"</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">format_str</span><span class="o">=</span><span class="s">"%Y-%m-%dT%H:%M:%OSZ"</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">obs_datetime</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.POSIXct</span><span class="p">(</span><span class="n">aqhi_obs_realtime</span><span class="o">$</span><span class="n">observation_datetime</span><span class="p">,</span><span class="w"> </span><span class="n">tz</span><span class="o">=</span><span class="s">"GMT"</span><span class="p">,</span><span class="w"> </span><span class="n">format</span><span class="o">=</span><span class="n">format_str</span><span class="p">)</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">aqhi_obs_realtime</span><span class="o">$</span><span class="n">observation_datetime</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">obs_datetime</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">aqhi_obs_realtime</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">observation_datetime</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">aqhi</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">  </span><span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">aqhi</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">=</span><span class="n">aqhi</span><span class="p">),</span><span class="w"> </span><span class="n">shape</span><span class="o">=</span><span class="m">21</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">  </span><span class="nf">scale_fill_viridis_c</span><span class="p">(</span><span class="n">guide</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;legend&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">  </span><span class="nf">scale_fill_viridis_c</span><span class="p">(</span><span class="n">guide</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"legend"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">  </span><span class="nf">scale_size_continuous</span><span class="p">(</span><span class="n">range</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">  </span><span class="nf">geom_line</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">  </span><span class="nf">labs</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">&quot;AQHI as a function of time for Ottawa&quot;</span><span class="p">,</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">       </span><span class="n">subtitle</span><span class="o">=</span><span class="s">&quot;From weather.gc.ca&quot;</span><span class="p">,</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">       </span><span class="n">y</span><span class="o">=</span><span class="s">&quot;AQHI&quot;</span><span class="p">,</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">       </span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Observation datetime&quot;</span><span class="p">,</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">       </span><span class="n">caption</span><span class="o">=</span><span class="s">&quot;Working with R example&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">  </span><span class="nf">labs</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">"AQHI as a function of time for Ottawa"</span><span class="p">,</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">       </span><span class="n">subtitle</span><span class="o">=</span><span class="s">"From weather.gc.ca"</span><span class="p">,</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">       </span><span class="n">y</span><span class="o">=</span><span class="s">"AQHI"</span><span class="p">,</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">       </span><span class="n">x</span><span class="o">=</span><span class="s">"Observation datetime"</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">       </span><span class="n">caption</span><span class="o">=</span><span class="s">"Working with R example"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
 </span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">  </span><span class="nf">scale_x_datetime</span><span class="p">(</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="n">breaks</span><span class="o">=</span><span class="nf">seq</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="n">obs_datetime</span><span class="p">),</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">obs_datetime</span><span class="p">),</span><span class="w"> </span><span class="n">by</span><span class="o">=</span><span class="s">&quot;6 hours&quot;</span><span class="p">),</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">    </span><span class="n">date_labels</span><span class="o">=</span><span class="s">&quot;%m-%d %H:%M&quot;</span><span class="p">,</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="n">breaks</span><span class="o">=</span><span class="nf">seq</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="n">obs_datetime</span><span class="p">),</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">obs_datetime</span><span class="p">),</span><span class="w"> </span><span class="n">by</span><span class="o">=</span><span class="s">"6 hours"</span><span class="p">),</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">    </span><span class="n">date_labels</span><span class="o">=</span><span class="s">"%m-%d %H:%M"</span><span class="p">,</span>
 </span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">    </span><span class="n">expand</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">0.005</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">))</span>
 </span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="nf">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
@@ -5066,7 +5066,7 @@
 <span class="normal"><a href="#__codelineno-1-104">104</a></span>
 <span class="normal"><a href="#__codelineno-1-105">105</a></span>
 <span class="normal"><a href="#__codelineno-1-106">106</a></span>
-<span class="normal"><a href="#__codelineno-1-107">107</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>&#39; Explicit -&gt; The variables used must be defined with Dim before being used
+<span class="normal"><a href="#__codelineno-1-107">107</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>' Explicit -&gt; The variables used must be defined with Dim before being used
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>Option Explicit
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>Sub MakeRequest()
@@ -5075,27 +5075,27 @@
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>     Dim params As String
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a>     Dim reqURL As String
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>     &#39; URL for the request with parameters
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>     baseURL = &quot;https://api.weather.gc.ca/collections/aqhi-observations-realtime/items&quot;
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a>     params = &quot;sortby=observation_datetime&amp;limit=100&amp;location_name_fr=Ottawa&quot;
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>     ' URL for the request with parameters
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>     baseURL = "https://api.weather.gc.ca/collections/aqhi-observations-realtime/items"
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a>     params = "sortby=observation_datetime&amp;limit=100&amp;location_name_fr=Ottawa"
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a>     &#39; We concatenate into a single URL and we add &quot;&amp;f=csv&quot; at the end to get the data in CSV format
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>     reqURL = baseURL &amp; &quot;?&quot; &amp; params &amp; &quot;&amp;f=csv&quot;
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a>     ' We concatenate into a single URL and we add "&amp;f=csv" at the end to get the data in CSV format
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>     reqURL = baseURL &amp; "?" &amp; params &amp; "&amp;f=csv"
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a>
 </span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a>     Application.ScreenUpdating = False
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a>     &#39; We clear the content of the cell in columns A to Z before adding the new data
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a>     ThisWorkbook.Worksheets(&quot;Sheet1&quot;).Range(&quot;A:Z&quot;).ClearContents
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a>     ' We clear the content of the cell in columns A to Z before adding the new data
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a>     ThisWorkbook.Worksheets("Sheet1").Range("A:Z").ClearContents
 </span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a>     &#39; We select the Excel sheet named &quot;Sheet1&quot;
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a>     Sheets(&quot;Sheet1&quot;).Select
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a>     ' We select the Excel sheet named "Sheet1"
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a>     Sheets("Sheet1").Select
 </span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a>
 </span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a>     Dim ConnString As String
 </span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26"></a>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27"></a>     &#39; We send the request for the CSV file and we tell it to put the data inside &quot;Sheet1&quot;
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28"></a>     ConnString = &quot;TEXT;&quot; &amp; reqURL
-</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a>          With ThisWorkbook.Worksheets(&quot;Sheet1&quot;).QueryTables.Add(Connection:=ConnString, Destination:=Worksheets(&quot;Sheet1&quot;).Cells(1, 1))
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30"></a>               .Name = &quot;AQHI Observations Realtime&quot;
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27"></a>     ' We send the request for the CSV file and we tell it to put the data inside "Sheet1"
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28"></a>     ConnString = "TEXT;" &amp; reqURL
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a>          With ThisWorkbook.Worksheets("Sheet1").QueryTables.Add(Connection:=ConnString, Destination:=Worksheets("Sheet1").Cells(1, 1))
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30"></a>               .Name = "AQHI Observations Realtime"
 </span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31"></a>               .FieldNames = True
 </span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32"></a>               .RowNumbers = False
 </span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33"></a>               .FillAdjacentFormulas = False
@@ -5114,7 +5114,7 @@
 </span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46"></a>
 </span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47"></a>          End With
 </span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48"></a>
-</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49"></a>     &#39; We will be making a LineChart of AQHI (aqhi) as a function of time (observation_datetime)
+</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49"></a>     ' We will be making a LineChart of AQHI (aqhi) as a function of time (observation_datetime)
 </span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50"></a>     Dim WS As Worksheet
 </span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51"></a>     Dim ColxNum As Integer
 </span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52"></a>     Dim ColyNum As Integer
@@ -5125,51 +5125,51 @@
 </span><span id="__span-1-57"><a id="__codelineno-1-57" name="__codelineno-1-57"></a>
 </span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58"></a>     Set WS = ActiveSheet
 </span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59"></a>
-</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60"></a>     &#39; We need to find the column number of &quot;observation_datetime&quot; and the corresponding column letter
-</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61"></a>     ColxNum = Application.WorksheetFunction.Match(&quot;observation_datetime&quot;, WS.Rows(1), 0)
-</span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62"></a>     ColxLetter = Split(Cells(1, ColxNum).Address, &quot;$&quot;)(1)
+</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60"></a>     ' We need to find the column number of "observation_datetime" and the corresponding column letter
+</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61"></a>     ColxNum = Application.WorksheetFunction.Match("observation_datetime", WS.Rows(1), 0)
+</span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62"></a>     ColxLetter = Split(Cells(1, ColxNum).Address, "$")(1)
 </span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63"></a>
-</span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64"></a>     &#39; We need to find the column number of &quot;aqhi&quot; and the corresponding column letter
-</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65"></a>     ColyNum = Application.WorksheetFunction.Match(&quot;aqhi&quot;, WS.Rows(1), 0)
-</span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66"></a>     ColyLetter = Split(Cells(1, ColyNum).Address, &quot;$&quot;)(1)
+</span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64"></a>     ' We need to find the column number of "aqhi" and the corresponding column letter
+</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65"></a>     ColyNum = Application.WorksheetFunction.Match("aqhi", WS.Rows(1), 0)
+</span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66"></a>     ColyLetter = Split(Cells(1, ColyNum).Address, "$")(1)
 </span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67"></a>
-</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68"></a>     &#39; We find the total number of lines for the data selection
-</span><span id="__span-1-69"><a id="__codelineno-1-69" name="__codelineno-1-69"></a>     lastRow = ActiveSheet.Cells.Find(&quot;*&quot;, SearchOrder:=xlByRows, SearchDirection:=xlPrevious).Row
+</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68"></a>     ' We find the total number of lines for the data selection
+</span><span id="__span-1-69"><a id="__codelineno-1-69" name="__codelineno-1-69"></a>     lastRow = ActiveSheet.Cells.Find("*", SearchOrder:=xlByRows, SearchDirection:=xlPrevious).Row
 </span><span id="__span-1-70"><a id="__codelineno-1-70" name="__codelineno-1-70"></a>
-</span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71"></a>     &#39; We select all the values from observation_datetime column and format it into a datetime format in the form &quot;month-day hour:minute&quot;
+</span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71"></a>     ' We select all the values from observation_datetime column and format it into a datetime format in the form "month-day hour:minute"
 </span><span id="__span-1-72"><a id="__codelineno-1-72" name="__codelineno-1-72"></a>     Dim c As Range
 </span><span id="__span-1-73"><a id="__codelineno-1-73" name="__codelineno-1-73"></a>     Dim ColDatetimeValues As String
-</span><span id="__span-1-74"><a id="__codelineno-1-74" name="__codelineno-1-74"></a>     ColDatetimeValues = ColxLetter &amp; &quot;1:&quot; &amp; ColxLetter &amp; lastRow
+</span><span id="__span-1-74"><a id="__codelineno-1-74" name="__codelineno-1-74"></a>     ColDatetimeValues = ColxLetter &amp; "1:" &amp; ColxLetter &amp; lastRow
 </span><span id="__span-1-75"><a id="__codelineno-1-75" name="__codelineno-1-75"></a>     WS.Range(ColDatetimeValues).Select
-</span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76"></a>     Selection.NumberFormat = &quot;mm-dd hh:mm&quot;
+</span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76"></a>     Selection.NumberFormat = "mm-dd hh:mm"
 </span><span id="__span-1-77"><a id="__codelineno-1-77" name="__codelineno-1-77"></a>     For Each c In Selection
-</span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78"></a>          c.Value = Replace(c.Value, &quot;T&quot;, &quot; &quot;)
-</span><span id="__span-1-79"><a id="__codelineno-1-79" name="__codelineno-1-79"></a>          c.Value = Replace(c.Value, &quot;Z&quot;, &quot;&quot;)
+</span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78"></a>          c.Value = Replace(c.Value, "T", " ")
+</span><span id="__span-1-79"><a id="__codelineno-1-79" name="__codelineno-1-79"></a>          c.Value = Replace(c.Value, "Z", "")
 </span><span id="__span-1-80"><a id="__codelineno-1-80" name="__codelineno-1-80"></a>     Next c
 </span><span id="__span-1-81"><a id="__codelineno-1-81" name="__codelineno-1-81"></a>
-</span><span id="__span-1-82"><a id="__codelineno-1-82" name="__codelineno-1-82"></a>     &#39; We format lines and columns for data selection as H1:H62,J1:J62 for the LineChart
-</span><span id="__span-1-83"><a id="__codelineno-1-83" name="__codelineno-1-83"></a>     ValuesRange = ColxLetter &amp; &quot;1:&quot; &amp; ColxLetter &amp; lastRow &amp; &quot;,&quot; &amp; ColyLetter &amp; &quot;1:&quot; &amp; ColyLetter &amp; lastRow
+</span><span id="__span-1-82"><a id="__codelineno-1-82" name="__codelineno-1-82"></a>     ' We format lines and columns for data selection as H1:H62,J1:J62 for the LineChart
+</span><span id="__span-1-83"><a id="__codelineno-1-83" name="__codelineno-1-83"></a>     ValuesRange = ColxLetter &amp; "1:" &amp; ColxLetter &amp; lastRow &amp; "," &amp; ColyLetter &amp; "1:" &amp; ColyLetter &amp; lastRow
 </span><span id="__span-1-84"><a id="__codelineno-1-84" name="__codelineno-1-84"></a>
-</span><span id="__span-1-85"><a id="__codelineno-1-85" name="__codelineno-1-85"></a>     &#39; We select the values according to the formatted intervals
+</span><span id="__span-1-85"><a id="__codelineno-1-85" name="__codelineno-1-85"></a>     ' We select the values according to the formatted intervals
 </span><span id="__span-1-86"><a id="__codelineno-1-86" name="__codelineno-1-86"></a>     WS.Range(ValuesRange).Select
 </span><span id="__span-1-87"><a id="__codelineno-1-87" name="__codelineno-1-87"></a>
-</span><span id="__span-1-88"><a id="__codelineno-1-88" name="__codelineno-1-88"></a>     &#39; We create a ScatterLine chart with the selected data
+</span><span id="__span-1-88"><a id="__codelineno-1-88" name="__codelineno-1-88"></a>     ' We create a ScatterLine chart with the selected data
 </span><span id="__span-1-89"><a id="__codelineno-1-89" name="__codelineno-1-89"></a>     Dim myChart
 </span><span id="__span-1-90"><a id="__codelineno-1-90" name="__codelineno-1-90"></a>     Set myChart = WS.Shapes.AddChart2(227, xlXYScatterLines)
 </span><span id="__span-1-91"><a id="__codelineno-1-91" name="__codelineno-1-91"></a>     myChart.Select
 </span><span id="__span-1-92"><a id="__codelineno-1-92" name="__codelineno-1-92"></a>
-</span><span id="__span-1-93"><a id="__codelineno-1-93" name="__codelineno-1-93"></a>     &#39; We add and format the labels
+</span><span id="__span-1-93"><a id="__codelineno-1-93" name="__codelineno-1-93"></a>     ' We add and format the labels
 </span><span id="__span-1-94"><a id="__codelineno-1-94" name="__codelineno-1-94"></a>     With myChart
 </span><span id="__span-1-95"><a id="__codelineno-1-95" name="__codelineno-1-95"></a>          .chart.SetElement msoElementChartTitleAboveChart
 </span><span id="__span-1-96"><a id="__codelineno-1-96" name="__codelineno-1-96"></a>          .chart.SetElement msoElementPrimaryCategoryGridLinesMinor
 </span><span id="__span-1-97"><a id="__codelineno-1-97" name="__codelineno-1-97"></a>          .chart.SetElement msoElementPrimaryCategoryAxisTitleBelowAxis
 </span><span id="__span-1-98"><a id="__codelineno-1-98" name="__codelineno-1-98"></a>          .chart.SetElement msoElementPrimaryValueAxisTitleRotated
-</span><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99"></a>          .chart.ChartTitle.Text = &quot;AQHI as a function of time for Ottawa&quot;
-</span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100"></a>          .chart.Axes(Type:=xlCategory, AxisGroup:=xlPrimary).AxisTitle.Text = &quot;Observation datetime&quot;
+</span><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99"></a>          .chart.ChartTitle.Text = "AQHI as a function of time for Ottawa"
+</span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100"></a>          .chart.Axes(Type:=xlCategory, AxisGroup:=xlPrimary).AxisTitle.Text = "Observation datetime"
 </span><span id="__span-1-101"><a id="__codelineno-1-101" name="__codelineno-1-101"></a>          .chart.Axes(Type:=xlCategory).TickLabels.Orientation = 45
-</span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102"></a>          .chart.Axes(Type:=xlCategory).MinimumScale = Range(ColxLetter &amp; &quot;2&quot;).Value
+</span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102"></a>          .chart.Axes(Type:=xlCategory).MinimumScale = Range(ColxLetter &amp; "2").Value
 </span><span id="__span-1-103"><a id="__codelineno-1-103" name="__codelineno-1-103"></a>          .chart.Axes(Type:=xlCategory).MaximumScale = Range(ColxLetter &amp; lastRow).Value
-</span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104"></a>          .chart.Axes(Type:=xlValue, AxisGroup:=xlPrimary).AxisTitle.Text = &quot;AQHI&quot;
+</span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104"></a>          .chart.Axes(Type:=xlValue, AxisGroup:=xlPrimary).AxisTitle.Text = "AQHI"
 </span><span id="__span-1-105"><a id="__codelineno-1-105" name="__codelineno-1-105"></a>     End With
 </span><span id="__span-1-106"><a id="__codelineno-1-106" name="__codelineno-1-106"></a>
 </span><span id="__span-1-107"><a id="__codelineno-1-107" name="__codelineno-1-107"></a>End Sub

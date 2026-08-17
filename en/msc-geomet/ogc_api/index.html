@@ -29,7 +29,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.55">
     
     
       
@@ -5573,39 +5573,39 @@ Returns in json format by default:</p>
 <h5 id="2-searching-partial-keywords"><span class="badge badge-info">2. Searching partial keywords</span><a class="headerlink" href="#2-searching-partial-keywords" title="Permanent link">&para;</a></h5>
 <p>CQL supports partial text matching using the <code>LIKE</code> operator. It allows you to search for substrings within text attributes by using the <code>%</code> character as a wildcard, which can represent zero or more characters. The comparison is case-insensitive, but search string <strong>must</strong> be entered as <u>lowercase</u> and in between <u>single quote</u>. If the attribute value contains multiple words, the <code>LIKE</code> predicate is applied to the entire text value, matching the pattern against any substring within it.</p>
 <p><strong>2.1)</strong> Find all <code>STATION_NAME</code> containing the keyword <code>LAKE</code>. In that case, <code>'%lak%'</code> matches case insensitive keywords such as <code>Lake, lak5, SPOKIN LAKE 4E, 2LAKE9, LaK</code>.</br>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE &#39;%lak%&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE '%lak%'
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20LIKE%20%27%lak%%27">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE '%lak%'</a>
 </br></br></p>
 <p><strong>2.2)</strong> Filter only specific name of station whose name is (or is <code>NOT</code>) in a given list. The wildcard <code>%</code> can also be used in the list.</br>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>CQL2: ?filter=properties.STATION_NAME NOT IN (&#39;lake&#39;, &#39;river&#39;)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>CQL2: ?filter=properties.STATION_NAME NOT IN ('lake', 'river')
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20NOT%20IN%20(%27lake%27,%20%27river%27)">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME NOT IN ('lake', 'river')</a>
 </br></br></p>
 <p><strong>2.3)</strong> To filter for <u>more than a word</u>, you need two different <code>LIKE</code> predicates. In this case, specifying 'quinsam' <code>AND</code> 'river' allows to filter for station name containing <strong>both</strong> 'quinsam' and 'river' keywords. Using <code>OR</code> would return station name containing either 'quinsam', 'river' or both.</br>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE &#39;%quisam%&#39; AND properties.STATION_NAME LIKE &#39;%river%&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE '%quisam%' AND properties.STATION_NAME LIKE '%river%'
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20LIKE%20%27%quinsam%%27%20AND%20properties.STATION_NAME%20LIKE%20%27%river%%27">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE '%quinsam%' AND properties.STATION_NAME LIKE '%river%'</a>
 </br></br></p>
 <p><strong>2.4)</strong> Extracts station name starting with the letter <code>K</code>. You can place the wildcard <code>%</code> accordingly. Here, you see that it is not necessarily the first word of the station name that is a match. The <code>LIKE</code> predicate will compare every keywords of the text.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE &#39;k%&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE 'k%'
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20LIKE%20%27k%%27">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE 'k%'</a></p>
 <p><img alt="CQL LIKE Wildcard Start" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Like_Wildcard_Start_en.png" />
 </br></p>
 <p><strong>2.5)</strong> Extracts station name ending with the letter <code>T</code>. You can place the wildcard <code>%</code> accordingly. Here, you see that it is not necessarily the last word of the station name that is a match. The <code>LIKE</code> predicate will compare every keywords of the text.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE &#39;%t&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>CQL2: ?filter=properties.STATION_NAME LIKE '%t'
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME+LIKE+%27%25t%27&amp;limit=10&amp;offset=0">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE '%t'</a></p>
 <p><img alt="CQL LIKE Wildcard End" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Like_Wildcard_End_en.png" />
 </br></p>
 <p><strong>2.6)</strong> Searching meteorological bulletins by the identifier. It's not possible to manually search by <code>id</code> on the interface. Users can use CQL filters and leverage the <a href="../../msc-data/bulletins/readme_bulletins-datamart/#directory-and-file-name-nomenclature">bulletin filename nomenclature documentation</a>.</br>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>CQL2: ?filter=properties.identifier LIKE &#39;%WWCN70%&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>CQL2: ?filter=properties.identifier LIKE '%WWCN70%'
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/bulletins-realtime/items/?filter=properties.identifier%20LIKE%20%27%wwcn70%%27">https://api.weather.gc.ca/collections/bulletins-realtime/items/?filter=properties.identifier LIKE '%wwcn70%'</a>
 </br></br></p>
 <p><strong>2.7)</strong> Search bulletins with partial keyword <code>CYOY</code> in the url.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>CQL2: ?filter=properties.type=SA AND properties.issuer_code=CWAO AND properties.url LIKE &#39;%cyoy%&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>CQL2: ?filter=properties.type=SA AND properties.issuer_code=CWAO AND properties.url LIKE '%cyoy%'
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/bulletins-realtime/items?filter=properties.type=SA%20AND%20properties.issuer_code=CWAO%20AND%20properties.url%20LIKE%20%27%cyoy%%27">https://api.weather.gc.ca/collections/bulletins-realtime/items?filter=properties.type=SA AND properties.issuer_code=CWAO AND properties.url LIKE '%cyoy%'</a> </br></p>
 <p><code>?q=</code> is the "full text search" capability in the <abbr title="Meteorological Service of Canada">MSC</abbr> GeoMet <abbr title="Open Geospatial Consortium">OGC</abbr> <abbr title="Application Programming Interface">API</abbr>. The equivalent query is:
@@ -5652,7 +5652,7 @@ Returns in json format by default:</p>
 <a href="https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.WIND_DIRECTION%20BETWEEN%2023%20AND%2045%20AND%20properties.WIND_SPEED%20%3E=%2025">https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.WIND_DIRECTION BETWEEN 23 AND 45 AND properties.WIND_SPEED &gt;= 25</a>
 </br></br></p>
 <p><strong>4.3)</strong> Filter items between two datetime. Datetime values must be enclosed in single quotes, because it is defined as <code>string</code> in the collection queryables.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>CQL2: ?filter=properties.LOCAL_DATE BETWEEN &#39;2023-11-28 14:00:00&#39; AND &#39;2024-11-28 14:00:00&#39;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>CQL2: ?filter=properties.LOCAL_DATE BETWEEN '2023-11-28 14:00:00' AND '2024-11-28 14:00:00'
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-hourly/items?limit=100&amp;filter=properties.LOCAL_DATE+BETWEEN+%272023-11-28+14%3A00%3A00%27+AND+%272024-11-28+14%3A00%3A00%27">https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.LOCAL_DATE BETWEEN '2023-11-28 14:00:00' AND '2024-11-28 14:00:00'</a></p>
 <p><img alt="CQL Climate Hourly" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Schema_ClimateHourly_en.png" />
@@ -5689,7 +5689,7 @@ Returns in json format by default:</p>
 <li>The <code>TOTAL_PRECIPITATION</code> is between 5 and 40 mm;</br></li>
 <li>The <code>LOCAL_YEAR</code> is between 2010 and 2020;</br></li>
 <li>The <code>LOCAL_MONTH</code> is between June and September (JJAS).</br>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>CQL2: ?filter=CLIMATE_IDENTIFIER = &#39;7014160&#39; AND properties.MEAN_TEMPERATURE BETWEEN 18 AND 28 AND properties.TOTAL_PRECIPITATION BETWEEN 5 AND 40 AND properties.LOCAL_YEAR BETWEEN 2010 AND 2020 AND properties.LOCAL_MONTH BETWEEN 6 AND 9
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>CQL2: ?filter=CLIMATE_IDENTIFIER = '7014160' AND properties.MEAN_TEMPERATURE BETWEEN 18 AND 28 AND properties.TOTAL_PRECIPITATION BETWEEN 5 AND 40 AND properties.LOCAL_YEAR BETWEEN 2010 AND 2020 AND properties.LOCAL_MONTH BETWEEN 6 AND 9
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-daily/items?filter=properties.CLIMATE_IDENTIFIER=%277014160%27%20AND%20properties.MEAN_TEMPERATURE%20BETWEEN%2018%20AND%2028%20AND%20properties.TOTAL_PRECIPITATION%20BETWEEN%205%20AND%2040%20AND%20properties.LOCAL_YEAR%20BETWEEN%202010%20AND%202020%20AND%20properties.LOCAL_MONTH%20BETWEEN%206%20AND%209">https://api.weather.gc.ca/collections/climate-daily/items?filter=CLIMATE_IDENTIFIER = '7014160' AND properties.MEAN_TEMPERATURE BETWEEN 18 AND 28 AND properties.TOTAL_PRECIPITATION BETWEEN 5 AND 40 AND properties.LOCAL_YEAR BETWEEN 2010 AND 2020 AND properties.LOCAL_MONTH BETWEEN 6 AND 9</a></li>
 </ul>
@@ -5707,7 +5707,7 @@ Returns in json format by default:</p>
 <li>Have a station containing the keyword "LAKE" with <code>LIKE</code>;</br></li>
 <li>Reports minimum temperature <code>BETWEEN</code> -20 and -10°C;</br></li>
 <li>Either have maximum speed gusts above 20 km/h.</br>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">CQL2</span><span class="p">:</span> <span class="err">?</span><span class="nb">filter</span><span class="o">=</span><span class="n">INTERSECTS</span><span class="p">(</span><span class="n">geometry</span><span class="p">,</span><span class="n">POLYGON</span><span class="p">((</span><span class="o">-</span><span class="mi">140</span> <span class="mi">48</span><span class="p">,</span><span class="o">-</span><span class="mi">95</span> <span class="mi">48</span><span class="p">,</span><span class="o">-</span><span class="mi">95</span> <span class="mi">60</span><span class="p">,</span><span class="o">-</span><span class="mi">140</span> <span class="mi">60</span><span class="p">,</span><span class="o">-</span><span class="mi">140</span> <span class="mi">48</span><span class="p">)))</span> <span class="n">AND</span> <span class="n">properties</span><span class="o">.</span><span class="n">STATION_NAME</span> <span class="n">LIKE</span> <span class="s1">&#39;</span><span class="si">%la</span><span class="s1">ke%&#39;</span> <span class="n">AND</span> <span class="n">properties</span><span class="o">.</span><span class="n">MIN_TEMPERATURE</span> <span class="n">BETWEEN</span> <span class="o">-</span><span class="mi">20</span> <span class="n">AND</span> <span class="o">-</span><span class="mi">10</span> <span class="n">AND</span> <span class="n">properties</span><span class="o">.</span><span class="n">SPEED_MAX_GUST</span> <span class="o">&gt;=</span> <span class="mi">20</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">CQL2</span><span class="p">:</span> <span class="err">?</span><span class="nb">filter</span><span class="o">=</span><span class="n">INTERSECTS</span><span class="p">(</span><span class="n">geometry</span><span class="p">,</span><span class="n">POLYGON</span><span class="p">((</span><span class="o">-</span><span class="mi">140</span> <span class="mi">48</span><span class="p">,</span><span class="o">-</span><span class="mi">95</span> <span class="mi">48</span><span class="p">,</span><span class="o">-</span><span class="mi">95</span> <span class="mi">60</span><span class="p">,</span><span class="o">-</span><span class="mi">140</span> <span class="mi">60</span><span class="p">,</span><span class="o">-</span><span class="mi">140</span> <span class="mi">48</span><span class="p">)))</span> <span class="n">AND</span> <span class="n">properties</span><span class="o">.</span><span class="n">STATION_NAME</span> <span class="n">LIKE</span> <span class="s1">'</span><span class="si">%la</span><span class="s1">ke%'</span> <span class="n">AND</span> <span class="n">properties</span><span class="o">.</span><span class="n">MIN_TEMPERATURE</span> <span class="n">BETWEEN</span> <span class="o">-</span><span class="mi">20</span> <span class="n">AND</span> <span class="o">-</span><span class="mi">10</span> <span class="n">AND</span> <span class="n">properties</span><span class="o">.</span><span class="n">SPEED_MAX_GUST</span> <span class="o">&gt;=</span> <span class="mi">20</span>
 </span></code></pre></div>
 <a href="https://api.weather.gc.ca/collections/climate-daily/items?filter=INTERSECTS(geometry,POLYGON((-140%2048,-95%2048,-95%2060,-140%2060,-140%2048)))%20AND%20properties.STATION_NAME%20LIKE%20%27%lake%%27%20AND%20properties.MIN_TEMPERATURE%20BETWEEN%20-20%20AND%20-10%20AND%20properties.SPEED_MAX_GUST%20%3E=%2020">https://api.weather.gc.ca/collections/climate-daily/items?filter=INTERSECTS(geometry,POLYGON((-140 48,-95 48,-95 60,-140 60,-140 48))) AND properties.STATION_NAME LIKE '%lake%' AND properties.MIN_TEMPERATURE BETWEEN -20 AND -10 AND properties.SPEED_MAX_GUST &gt;= 20</a>
  </br></br></li>
@@ -5741,7 +5741,7 @@ Returns in json format by default:</p>
 </span></code></pre></div></li>
 <li>Encoding the url directly with the <code>--data-urlencode</code> and <code>-G</code> GET request options. Users can add multiple <code>--data-urlencode</code> parameters (equivalent to <code>&amp;</code>).
 <div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>curl -G [basepath] --data-urlencode [CQL EXPRESSION]
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>curl -G &quot;https://api.weather.gc.ca/collections/climate-hourly/items?&quot; --data-urlencode &quot;filter=properties.WIND_DIRECTION BETWEEN 23 AND 45 AND properties.WIND_SPEED &gt;=25&quot; --data-urlencode &quot;lang=en&quot;
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>curl -G "https://api.weather.gc.ca/collections/climate-hourly/items?" --data-urlencode "filter=properties.WIND_DIRECTION BETWEEN 23 AND 45 AND properties.WIND_SPEED &gt;=25" --data-urlencode "lang=en"
 </span></code></pre></div></li>
 </ul>
 <p><strong>Query with Python</strong> <br>
@@ -5785,33 +5785,33 @@ To parse CQL filters and make HTTP requests, install the <code>pygeofilter</code
 </span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pygeofilter.parsers.ecql</span><span class="w"> </span><span class="kn">import</span> <span class="n">parse</span>
 </span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4"></a>
 </span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5"></a><span class="c1"># GeoMet-OGC-API endpoint.</span>
-</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6"></a><span class="n">api_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.weather.gc.ca/collections/climate-daily/items&quot;</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6"></a><span class="n">api_url</span> <span class="o">=</span> <span class="s2">"https://api.weather.gc.ca/collections/climate-daily/items"</span>
 </span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7"></a>
 </span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8"></a><span class="c1"># CQL filters.</span>
 </span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9"></a><span class="n">cql_filter</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10"></a>    <span class="s2">&quot;properties.LOCAL_YEAR = 2025 AND &quot;</span>
-</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11"></a>    <span class="s2">&quot;properties.LOCAL_MONTH BETWEEN 6 AND 9 AND &quot;</span>
-</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12"></a>    <span class="s2">&quot;properties.MAX_TEMPERATURE &gt;= 30&quot;</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10"></a>    <span class="s2">"properties.LOCAL_YEAR = 2025 AND "</span>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11"></a>    <span class="s2">"properties.LOCAL_MONTH BETWEEN 6 AND 9 AND "</span>
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12"></a>    <span class="s2">"properties.MAX_TEMPERATURE &gt;= 30"</span>
 </span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13"></a><span class="p">)</span>
 </span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14"></a><span class="c1"># Validate CQL filters before API request.</span>
 </span><span id="__span-30-15"><a id="__codelineno-30-15" name="__codelineno-30-15"></a><span class="k">try</span><span class="p">:</span>
 </span><span id="__span-30-16"><a id="__codelineno-30-16" name="__codelineno-30-16"></a>    <span class="n">parse</span><span class="p">(</span><span class="n">cql_filter</span><span class="p">)</span>
 </span><span id="__span-30-17"><a id="__codelineno-30-17" name="__codelineno-30-17"></a><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-</span><span id="__span-30-18"><a id="__codelineno-30-18" name="__codelineno-30-18"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid CQL filter: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-30-18"><a id="__codelineno-30-18" name="__codelineno-30-18"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Invalid CQL filter: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </span><span id="__span-30-19"><a id="__codelineno-30-19" name="__codelineno-30-19"></a>
 </span><span id="__span-30-20"><a id="__codelineno-30-20" name="__codelineno-30-20"></a><span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-30-21"><a id="__codelineno-30-21" name="__codelineno-30-21"></a>    <span class="s2">&quot;filter&quot;</span><span class="p">:</span> <span class="n">cql_filter</span><span class="p">,</span>
-</span><span id="__span-30-22"><a id="__codelineno-30-22" name="__codelineno-30-22"></a>    <span class="s2">&quot;lang&quot;</span><span class="p">:</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
-</span><span id="__span-30-23"><a id="__codelineno-30-23" name="__codelineno-30-23"></a>    <span class="s2">&quot;limit&quot;</span><span class="p">:</span> <span class="mi">100</span>
+</span><span id="__span-30-21"><a id="__codelineno-30-21" name="__codelineno-30-21"></a>    <span class="s2">"filter"</span><span class="p">:</span> <span class="n">cql_filter</span><span class="p">,</span>
+</span><span id="__span-30-22"><a id="__codelineno-30-22" name="__codelineno-30-22"></a>    <span class="s2">"lang"</span><span class="p">:</span> <span class="s2">"en"</span><span class="p">,</span>
+</span><span id="__span-30-23"><a id="__codelineno-30-23" name="__codelineno-30-23"></a>    <span class="s2">"limit"</span><span class="p">:</span> <span class="mi">100</span>
 </span><span id="__span-30-24"><a id="__codelineno-30-24" name="__codelineno-30-24"></a><span class="p">}</span>
 </span><span id="__span-30-25"><a id="__codelineno-30-25" name="__codelineno-30-25"></a><span class="c1"># Sends GET request to the API and encode url.</span>
 </span><span id="__span-30-26"><a id="__codelineno-30-26" name="__codelineno-30-26"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
-</span><span id="__span-30-27"><a id="__codelineno-30-27" name="__codelineno-30-27"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The encoded url is: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-30-27"><a id="__codelineno-30-27" name="__codelineno-30-27"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The encoded url is: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </span><span id="__span-30-28"><a id="__codelineno-30-28" name="__codelineno-30-28"></a>
 </span><span id="__span-30-29"><a id="__codelineno-30-29" name="__codelineno-30-29"></a><span class="c1"># Format json in output file.</span>
 </span><span id="__span-30-30"><a id="__codelineno-30-30" name="__codelineno-30-30"></a><span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-</span><span id="__span-30-31"><a id="__codelineno-30-31" name="__codelineno-30-31"></a><span class="n">climate_output_file</span> <span class="o">=</span> <span class="s2">&quot;climate_daysAbove30deg_JJAS_2025.json&quot;</span>
-</span><span id="__span-30-32"><a id="__codelineno-30-32" name="__codelineno-30-32"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">climate_output_file</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+</span><span id="__span-30-31"><a id="__codelineno-30-31" name="__codelineno-30-31"></a><span class="n">climate_output_file</span> <span class="o">=</span> <span class="s2">"climate_daysAbove30deg_JJAS_2025.json"</span>
+</span><span id="__span-30-32"><a id="__codelineno-30-32" name="__codelineno-30-32"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">climate_output_file</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
 </span><span id="__span-30-33"><a id="__codelineno-30-33" name="__codelineno-30-33"></a>    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fh</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div></p>
 
