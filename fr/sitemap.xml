@@ -223,6 +223,48 @@
         <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-geomet/</loc>
       </url>
       <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-datamart/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-animet/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/wmo-wis2/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/cost-recovered/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/use-case_arthur/use-case_arthur/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/use-case_oafeat/use-case_oafeat-script/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorial_WMS_QGIS/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorial_OAFeat_QGIS/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorial_raw-data_QGIS/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorial_OAFeat_Power-BI/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorial_OAFeat_R-Excel/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorial_gdal/tutorial_gdal/</loc>
+      </url>
+      <url>
+        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorial_web-maps/</loc>
+      </url>
+      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-geomet/wms/</loc>
       </url>
       <url>
@@ -235,28 +277,10 @@
         <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-geomet/stac/</loc>
       </url>
       <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-datamart/</loc>
-      </url>
-      <url>
         <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-datamart/amqp/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-datamart/readme_wget-datamart/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/fr/cost-recovered/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-animet/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/fr/wmo-wis2/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/</loc>
-      </url>
-      <url>
-        <loc>https://dukestep.github.io/zensical-public-doc/fr/usage/tutorials/</loc>
       </url>
       <url>
         <loc>https://dukestep.github.io/zensical-public-doc/fr/msc-data/readme_grib/</loc>
